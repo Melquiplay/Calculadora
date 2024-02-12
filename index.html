@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link  rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+   
+</head>
+<body>
+    <div class="calc">
+        <p style="font-size: 20PX; margin: 0; position: absolute; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >MelquiTech</p>
+        <p class="tela"></p>
+        <div class="teclado">
+            <div class="linha">
+                <button onclick="apagar()" class="esp">AC</button>
+                <button onclick="voltar()" class="esp"><</button>
+                <button onclick="calcular('/')" class="esp">/</button>
+                <button onclick="calcular('+')" class="esp">+</button>
+            </div>
+            <div class="linha">
+                <button onclick="calcular('7')" >7</button>
+                <button onclick="calcular('8')" >8</button>
+                <button onclick="calcular('9')" >9</button>
+                <button onclick="calcular('*')"  class="esp">x</button>
+            </div>
+            <div class="linha">
+                <button onclick="calcular('4')" >4</button>
+                <button onclick="calcular('5')" >5</button>
+                <button onclick="calcular('6')" >6</button>
+                <button onclick="calcular('-')"  class="esp">-</button>
+            </div>
+            <div class="linha">
+                <button onclick="calcular('1')" >1</button>
+                <button onclick="calcular('2')" >2</button>
+                <button onclick="calcular('3')">3</button>
+                <button onclick="calcular('.')" class="esp" >.</button>
+            </div>
+            <div style="width: auto;" class="linha">
+                <button onclick="calcular('0')" id="zero">0</button>
+                <button onclick="resu()" class="esp" id="igual">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
